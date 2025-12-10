@@ -1,0 +1,36 @@
+= obli-fs - Citation Guide
+:toc:
+
+== BibTeX
+
+[source,bibtex]
+----
+@software{obli-fs_2025,
+  author = {Polymath, Hyper},
+  title = {obli-fs},
+  year = {2025},
+  url = {https://github.com/hyperpolymath/obli-fs},
+  license = {AGPL-3.0-or-later}
+}
+----
+
+== Harvard Style
+
+Polymath, H. (2025) _obli-fs_ [Computer software]. Available at: https://github.com/hyperpolymath/obli-fs
+
+== OSCOLA
+
+Hyper Polymath, 'obli-fs' (2025) <https://github.com/hyperpolymath/obli-fs>
+
+== MLA
+
+Polymath, Hyper. "obli-fs." 2025, github.com/hyperpolymath/obli-fs.
+
+== APA 7
+
+Polymath, H. (2025). _obli-fs_ [Computer software]. GitHub. https://github.com/hyperpolymath/obli-fs
+
+== See Also
+
+* link:../CITATION.cff[CITATION.cff]
+* link:../codemeta.json[codemeta.json]
