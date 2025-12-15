@@ -1,10 +1,19 @@
-SPDX-License-Identifier: MIT AND LicenseRef-Palimpsest-0.8
+SPDX-License-Identifier: MIT OR AGPL-3.0-or-later
+SPDX-FileCopyrightText: 2024-2025 hyperpolymath
 
 ================================================================================
-MIT License
+DUAL LICENSE: MIT OR AGPL-3.0-or-later
 ================================================================================
 
-Copyright (c) 2024 Jonathan
+This project is dual-licensed under the MIT License OR the GNU Affero General
+Public License v3.0 or later. You may choose to use, copy, modify, and
+distribute this work under the terms of EITHER license (your choice).
+
+--------------------------------------------------------------------------------
+MIT LICENSE
+--------------------------------------------------------------------------------
+
+Copyright (c) 2024-2025 hyperpolymath
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -24,34 +33,59 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+--------------------------------------------------------------------------------
+GNU AFFERO GENERAL PUBLIC LICENSE v3.0 OR LATER
+--------------------------------------------------------------------------------
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU Affero General Public License as published by the Free
+Software Foundation, either version 3 of the License, or (at your option) any
+later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
+details.
+
+You should have received a copy of the GNU Affero General Public License along
+with this program. If not, see <https://www.gnu.org/licenses/>.
+
+The full text of the AGPL-3.0 is available at:
+  https://www.gnu.org/licenses/agpl-3.0.txt
+
+--------------------------------------------------------------------------------
+CHOOSING YOUR LICENSE
+--------------------------------------------------------------------------------
+
+You may choose to use this work under:
+  1. MIT License - Standard permissive open source license
+  2. AGPL-3.0-or-later - Copyleft license requiring source disclosure for
+     network services
+
+For most uses, MIT License provides maximum flexibility.
+For ensuring open source remains open (especially for SaaS/network services),
+AGPL-3.0-or-later provides stronger protections.
+
 ================================================================================
-Palimpsest License v0.8 (Ethical AI Addendum)
+PALIMPSEST PHILOSOPHICAL OVERLAY (NON-BINDING)
 ================================================================================
 
-In addition to the MIT License terms above, the following terms apply:
+This project encourages (but does not legally require) adherence to the
+principles of the Palimpsest License - a framework for consent-based digital
+interaction and the future web.
 
-1. PERMITTED USES
-   - Commercial use with attribution
-   - Modification and derivative works
-   - Distribution in source and binary forms
-   - Training of open-source AI models with attribution
+Core Principles (Encouraged):
+  - Respect for emotional and creative lineage
+  - Transparent AI training practices with explicit consent
+  - Preservation of metadata and attribution
+  - Protection of narrative intent and cultural context
 
-2. PROHIBITED USES
-   - Training of proprietary/closed-source AI models without explicit permission
-   - Removing or obscuring attribution in AI-generated outputs
-   - Using this work to train models that strip attribution from outputs
+The Palimpsest principles represent our vision for a consent-based internet.
+While not legally binding for use of this software, we encourage all users
+and contributors to familiarize themselves with these principles.
 
-3. ATTRIBUTION REQUIREMENTS
-   When this work or derivatives are used to train AI systems:
-   - The training dataset must include attribution to original authors
-   - AI systems trained on this work should preserve attribution metadata
-   - Generated outputs should include provenance information where feasible
+Learn more: https://github.com/hyperpolymath/palimpsest-license
 
-4. GOOD FAITH INTERPRETATION
-   These terms should be interpreted in good faith to:
-   - Protect contributor recognition
-   - Enable open-source AI development
-   - Prevent exploitation without attribution
-
-This addendum is severable. If any provision is found unenforceable, the
-remaining provisions and the MIT License remain in full effect.
+================================================================================
+END OF LICENSE
+================================================================================
