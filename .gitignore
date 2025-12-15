@@ -1,51 +1,79 @@
-# SPDX-License-Identifier: MIT AND LicenseRef-Palimpsest-0.8
-# SPDX-FileCopyrightText: 2024 Jonathan
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# RSR-compliant .gitignore
 
-# === Build Outputs ===
-dist/
-*.mjs
-*.bs.js
-lib/
-
-# === Dependencies ===
-node_modules/
-.npm-global/
-
-# === ReScript ===
-.bsb.lock
-.merlin
-
-# === Deno ===
-deno.lock
-
-# === Rust/WASM ===
-src/wasm/target/
-src/wasm/pkg/
-Cargo.lock
-
-# === Nix ===
-result
-result-*
-.direnv/
-
-# === IDE ===
-.idea/
-.vscode/
+# OS & Editor
+.DS_Store
+Thumbs.db
 *.swp
 *.swo
 *~
+.idea/
+.vscode/
 
-# === OS ===
-.DS_Store
-Thumbs.db
+# Build
+/target/
+/_build/
+/build/
+/dist/
+/out/
 
-# === Logs ===
+# Dependencies
+/node_modules/
+/vendor/
+/deps/
+/.elixir_ls/
+
+# Rust
+# Cargo.lock  # Keep for binaries
+
+# Elixir
+/cover/
+/doc/
+*.ez
+erl_crash.dump
+
+# Julia
+*.jl.cov
+*.jl.mem
+/Manifest.toml
+
+# ReScript
+/lib/bs/
+/.bsb.lock
+
+# Python (SaltStack only)
+__pycache__/
+*.py[cod]
+.venv/
+
+# Ada/SPARK
+*.ali
+/obj/
+/bin/
+
+# Haskell
+/.stack-work/
+/dist-newstyle/
+
+# Chapel
+*.chpl.tmp.*
+
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+secrets/
+
+# Test/Coverage
+/coverage/
+htmlcov/
+
+# Logs
 *.log
-npm-debug.log*
+/logs/
 
-# === Temporary ===
-tmp/
-.cache/
-
-# === Containers ===
-*.tar
+# Temp
+/tmp/
+*.tmp
+*.bak
