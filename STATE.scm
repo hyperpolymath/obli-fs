@@ -15,7 +15,7 @@
   '((version . "0.1.0")
     (schema-version . "1.0")
     (created . "2025-12-15")
-    (updated . "2025-12-15")
+    (updated . "2025-12-17")
     (project . "obli-fs")
     (repo . "github.com/hyperpolymath/obli-fs")))
 
@@ -41,18 +41,23 @@
 
 (define current-position
   '((phase . "v0.1 - Initial Setup and RSR Compliance")
-    (overall-completion . 25)
+    (overall-completion . 35)
 
     (components
      ((rsr-compliance
        ((status . "complete")
         (completion . 100)
-        (notes . "SHA-pinned actions, SPDX headers, multi-platform CI")))
+        (notes . "SHA-pinned actions, SPDX headers, multi-platform CI - audited 2025-12-17")))
+
+      (security
+       ((status . "hardened")
+        (completion . 95)
+        (notes . "All workflows SHA-pinned, permissions declared, security.txt extended to 2026")))
 
       (documentation
        ((status . "foundation")
-        (completion . 30)
-        (notes . "README exists, META/ECOSYSTEM/STATE.scm added")))
+        (completion . 35)
+        (notes . "README, META/ECOSYSTEM/STATE.scm, SECURITY.md complete")))
 
       (testing
        ((status . "minimal")
@@ -62,13 +67,17 @@
       (core-functionality
        ((status . "in-progress")
         (completion . 25)
-        (notes . "Initial implementation underway")))))
+        (notes . "ReScript types defined, runtime scaffolded")))))
 
     (working-features
-     ("RSR-compliant CI/CD pipeline"
-      "Multi-platform mirroring (GitHub, GitLab, Bitbucket)"
+     ("RSR-compliant CI/CD pipeline (all SHA-pinned)"
+      "Multi-platform mirroring (GitHub, GitLab)"
       "SPDX license headers on all files"
-      "SHA-pinned GitHub Actions"))))
+      "SHA-pinned GitHub Actions (security hardened)"
+      "CodeQL security scanning"
+      "OSSF Scorecard compliance"
+      "TruffleHog secrets detection"
+      "EditorConfig enforcement"))))
 
 ;;;============================================================================
 ;;; ROUTE TO MVP
@@ -79,30 +88,82 @@
     (definition . "Stable release with comprehensive documentation and tests")
 
     (milestones
-     ((v0.2
-       ((name . "Core Functionality")
+     ((v0.1.1
+       ((name . "Security Hardening Complete")
+        (status . "complete")
+        (completed-date . "2025-12-17")
+        (items
+         ("SHA-pin all GitHub Actions"
+          "Add SPDX headers to all workflows"
+          "Add permissions declarations"
+          "Extend security.txt to 2026"
+          "Resolve cross-platform sync status"))))
+
+      (v0.2
+       ((name . "Core Type System")
         (status . "pending")
         (items
-         ("Implement primary features"
-          "Add comprehensive tests"
-          "Improve documentation"))))
+         ("Complete ReScript type definitions for all entities"
+          "Convert src/runtime/mod.ts to ReScript"
+          "Implement Manifest entity validation"
+          "Add unit tests for core types"
+          "Document type system architecture"))))
+
+      (v0.3
+       ((name . "Actor System Foundation")
+        (status . "pending")
+        (items
+         ("Implement Actor entity with bounded execution"
+          "Define capability token system"
+          "Create message passing infrastructure"
+          "Add actor lifecycle management"
+          "Unit tests for actor system"))))
+
+      (v0.4
+       ((name . "Channel & Router Implementation")
+        (status . "pending")
+        (items
+         ("Implement consent-based Channel entities"
+          "Create Router for message routing"
+          "Define channel protocols"
+          "Add end-to-end messaging tests"))))
 
       (v0.5
-       ((name . "Feature Complete")
+       ((name . "Workflow & Archive System")
         (status . "pending")
         (items
-         ("All planned features implemented"
-          "Test coverage > 70%"
-          "API stability"))))
+         ("Implement Workflow composition"
+          "Create append-only Archive entity"
+          "Add audit logging infrastructure"
+          "Integration tests for complete entity graph"))))
+
+      (v0.7
+       ((name . "WASM Integration")
+        (status . "pending")
+        (items
+         ("Complete Rust/WASM core module"
+          "Integrate WASM with Deno runtime"
+          "Performance benchmarks"
+          "Cross-platform testing"))))
+
+      (v0.9
+       ((name . "Beta Release")
+        (status . "pending")
+        (items
+         ("Test coverage > 70%"
+          "API stability review"
+          "Documentation complete"
+          "External security review"))))
 
       (v1.0
        ((name . "Production Release")
         (status . "pending")
         (items
-         ("Comprehensive test coverage"
+         ("Comprehensive test coverage > 80%"
           "Performance optimization"
-          "Security audit"
-          "User documentation complete"))))))))
+          "Security audit passed"
+          "User and API documentation complete"
+          "Migration guides for adopters"))))))))
 
 ;;;============================================================================
 ;;; BLOCKERS & ISSUES
@@ -157,7 +218,18 @@
        ("Added META.scm, ECOSYSTEM.scm, STATE.scm"
         "Established RSR compliance"
         "Created initial project checkpoint"))
-      (notes . "First STATE.scm checkpoint created via automated script")))))
+      (notes . "First STATE.scm checkpoint created via automated script"))
+
+     ((date . "2025-12-17")
+      (session . "security-audit")
+      (accomplishments
+       ("SHA-pinned all GitHub Actions across all workflows"
+        "Added SPDX-License-Identifier headers to quality.yml, scorecard.yml, security-policy.yml, wellknown-enforcement.yml"
+        "Added permissions: read-all declarations to workflows missing them"
+        "Extended security.txt expiry from 2025-12-31 to 2026-12-31"
+        "Resolved cross-platform sync status in META.scm"
+        "Updated roadmap with detailed milestones through v1.0"))
+      (notes . "Comprehensive security audit and hardening session")))))
 
 ;;;============================================================================
 ;;; HELPER FUNCTIONS (for Guile evaluation)
@@ -184,11 +256,13 @@
 
 (define state-summary
   '((project . "obli-fs")
-    (version . "0.1.0")
-    (overall-completion . 25)
-    (next-milestone . "v0.2 - Core Functionality")
+    (version . "0.1.1")
+    (overall-completion . 35)
+    (last-milestone . "v0.1.1 - Security Hardening Complete")
+    (next-milestone . "v0.2 - Core Type System")
     (critical-blockers . 0)
     (high-priority-issues . 0)
-    (updated . "2025-12-15")))
+    (security-status . "hardened")
+    (updated . "2025-12-17")))
 
 ;;; End of STATE.scm
