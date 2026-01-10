@@ -1,9 +1,9 @@
-// SPDX-License-Identifier: MIT AND LicenseRef-Palimpsest-0.8
+// SPDX-License-Identifier: PMPL-1.0 AND LicenseRef-Palimpsest-0.8
 // SPDX-FileCopyrightText: 2024 Jonathan <jonathan@oblibeny.dev>
 
 = ObliFS: Typed Actor Coordination Over Storage
 
-image:https://img.shields.io/badge/license-AGPL--3.0-blue.svg[AGPL-3.0,link="https://www.gnu.org/licenses/agpl-3.0"] image:https://img.shields.io/badge/philosophy-Palimpsest-purple.svg[Palimpsest,link="https://github.com/hyperpolymath/palimpsest-licence"]
+image:https://img.shields.io/badge/license-Palimpsest--MPL--1.0-purple.svg[Palimpsest-MPL-1.0,link="https://github.com/hyperpolymath/palimpsest-license"] image:https://img.shields.io/badge/philosophy-Palimpsest-purple.svg[Palimpsest,link="https://github.com/hyperpolymath/palimpsest-licence"]
 :toc:
 :toclevels: 3
 :sectnums:
@@ -132,7 +132,7 @@ This project follows the link:CODE_OF_CONDUCT.adoc[Code of Conduct].
 
 Dual-licensed under:
 
-* MIT License — Permissive use with attribution
+* Palimpsest-MPL-1.0 License — Permissive use with attribution
 * link:LICENSE.txt[Palimpsest License v0.8] — Ethical AI restrictions
 
 See link:LICENSE.txt[LICENSE.txt] for full terms.
